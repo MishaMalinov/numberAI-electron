@@ -2,6 +2,8 @@
 
 This is application witch recognize numbers. Program was writed on electron.js
 
-## Subheader
+## How to use it?
 
-I'm training here)
+Install node.js
+Install all npm packages
+command : npm i
