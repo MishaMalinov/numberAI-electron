@@ -1,12 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="brain.js"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>AI</title>
 </head>
+
 <body>
-    Hello
+    <div class="content">
+        <button class="restart none" onclick="restart()">Restart</button>
+        <canvas id="canv" style="display:block">Update your brauser</canvas>
+        <div class="buttons none">
+            <button class="clear">Clear</button>
+        <button class="guess" onclick="guess()">Guess</button>
+        <!-- <button class="brain" onclick="brainIt()">Brain it</button> -->
+        
+        </div>
+        <div class="start">
+            <input type="file" name="client-file" id="get-files" multiple />
+        <button class="train" onclick="addToTrainArray()">All to train_data</button>
+        </div>
+        
+    </div>
+    
+    <script src="script.js">    </script>
 </body>
+
 </html>

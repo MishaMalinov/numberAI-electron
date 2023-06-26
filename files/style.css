@@ -1,4 +1,65 @@
 body{
-    color:white;
-    background-color: black;
+    background-color: grey;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#canv{
+    margin-top: 20%;
+    height: 580px;
+    width: 580px;
+    background-color: white;
+    display: none;
+}
+button{
+    height: 50px;
+    color: white;
+    
+}
+.clear{
+    background-color: red;
+    &:hover{
+        background-color: rgb(182, 1, 1);
+    }
+    &:active{
+        background-color: rgb(129, 0, 0);
+    }
+}
+.guess{
+    background-color: rgb(0, 177, 0);
+    &:hover{
+        background-color: rgb(0, 119, 0);
+    }
+    &:active{
+        background-color: rgb(0, 94, 0);
+
+    }
+}
+
+.brain{
+    color: black;
+    background-color: yellow;
+    &:hover{
+        background-color: rgb(204, 204, 0);
+    }
+    &:active{
+        background-color: rgb(151, 151, 0);
+
+    }
+}
+.train{
+    color: black;
+}
+.buttons{
+    
+    margin: 3% 0;
+}
+.none{
+    display: none;
+}
+.restart{
+    color: black;
+
 }
