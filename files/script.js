@@ -106,6 +106,9 @@ clearbtn.addEventListener('click', () => {
 async function addToTrainArray() {
 
     var inp = document.getElementById("get-files");
+   
+    start.classList.add('none');
+    
     let i = 0;
 
     async function timeout() {
@@ -113,7 +116,11 @@ async function addToTrainArray() {
         if (i == inp.files.length) {
             return new Promise(() => {
                 console.log("train is ready")
-                brainIt()
+                alert("Train have started, pls wait for next alert xD")
+                brainIt();
+                buttons.classList.remove('none');
+                // document.querySelector('.restart').classList.remove('none')
+                alert('AI is ready!')
             });
         } else {
             return new Promise(() => {
@@ -222,9 +229,7 @@ async function brainIt() {
         console.log(vector)
         net.train(train_data, { log: true });
         console.log("train is over")
-        buttons.classList.remove('none');
-        start.classList.add('none');
-        document.querySelector('.restart').classList.remove('none')
+        
     })
 
 }
@@ -234,5 +239,5 @@ function restart() {
     train_data = []
     buttons.classList.add('none');
     start.classList.remove('none');
-    document.querySelector('.restart').classList.add('none')
+    // document.querySelector('.restart').classList.add('none')
 }
